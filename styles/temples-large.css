@@ -1,0 +1,13 @@
+/* temples-large.css (for larger screens) */
+
+@media (min-width: 768px) {
+  /* Navigation */
+  nav {
+    gap: 2rem;
+  }
+
+  /* Gallery: more columns on larger screens */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
