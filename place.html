@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nigeria - Country Page</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Nigeria</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Tourism</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Image -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 600px)">
+        <img src="images/hero-small.webp" alt="Scenery of Nigeria" />
+      </picture>
+    </section>
+
+    <!-- About Section --> 
+    <section class="about">
+      <h2>About Nigeria</h2>
+      <p>
+        Nigeria, known as the "Giant of Africa," is rich in culture, history, and natural beauty.
+        From the bustling city of Lagos to the peaceful Zuma Rock, it is a land of diversity and opportunity.
+      </p>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather</h2>
+      <div class="weather-icon-mobile">
+        <img src="images/weather.svg" alt="Weather Icon">
+      </div>
+      <div class="weather-info">
+        <p>Temperature: <span id="temp">25</span> °C</p>
+        <p>Wind Speed: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="windchill">N/A</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nigeria Page | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
